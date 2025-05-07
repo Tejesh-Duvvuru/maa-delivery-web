@@ -6,10 +6,12 @@ let imageUrl =
 const Tile = () => {
   return (
     <div className="tile-container">
-      <img src={imageUrl} alt="Company Logo" className="tile-food-image" />
+      <div style={{ textAlign: "center" }}>
+        <img src={imageUrl} alt="Company Logo" className="tile-food-image" />
+      </div>
       <div>
         <h3 className="tile-text">Food Parcel</h3>
-        <p className="tile-description">Description of the food parcel.</p>
+        <p>Description of the food parcel.</p>
       </div>
     </div>
   );
