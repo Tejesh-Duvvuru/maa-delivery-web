@@ -12,17 +12,18 @@ const Homepage = () => {
           <Tile />
           <Tile />
         </div>
-        <div className="tile-inside-container">
+        <div className="tile-inside-container second-tile-container">
           <Tile />
           <Tile />
         </div>
       </div>
-      <div style={{ background: "red" }}>
+      {/* <div style={{ background: "" }}>
         <OnGoing />
-      </div>
-      <div>
-        <Trackorder />
-      </div>
+      </div> */}
+      {/* <div style={{ background: "red" }} className="trackorder-container"> */}
+      <Trackorder />
+      {/* </div> */}
+      {/* <Tile /> */}
     </div>
   );
 };

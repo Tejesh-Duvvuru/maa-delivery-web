@@ -1,5 +1,7 @@
 .trackorder-container {
-  border-style: solid;
+  /* border-style: solid; */
   color: #054a29;
-  border-width: 2px;
+  /* border-width: 2px; */
+  /* background-color: orange; */
+  width: 40%;
 }

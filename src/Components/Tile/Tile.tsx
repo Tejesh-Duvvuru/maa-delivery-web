@@ -9,7 +9,7 @@ const Tile = () => {
       <div style={{ textAlign: "center" }}>
         <img src={imageUrl} alt="Company Logo" className="tile-food-image" />
       </div>
-      <div>
+      <div className="tile-text-container">
         <h3 className="tile-text">Food Parcel</h3>
         <p>Description of the food parcel.</p>
       </div>

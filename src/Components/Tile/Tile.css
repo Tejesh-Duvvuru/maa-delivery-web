@@ -5,18 +5,16 @@
   background-color: #f5f3f5;
   border-radius: 5%;
   width: 100%;
-  /* width: 12%; */
-  /* height: 10%; */
-  /* padding-top: 2rem; */
+  height: 35vh;
   padding-bottom: 1rem;
-  padding-left: 1%;
-  margin-top: 1%;
-  /* margin-right: 10px; */
+  /* padding-left: 1%; */
+  margin-right: 10%;
+  margin-left: 10%;
   border-style: solid;
   border-color: #054a29;
   border-width: 2px;
   box-shadow: 2px 4px 8px 0px #054a29;
-  /* transition: transform 0.2s, box-shadow 0.2s; */
+  transition: transform 0.2s, box-shadow 0.2s;
   cursor: pointer;
 }
 
@@ -29,4 +27,7 @@
   height: auto;
   border-radius: 5%;
   /* margin-top: 1rem; */
+}
+.tile-text-container {
+  padding-left: 0.5rem;
 }
