@@ -28,6 +28,7 @@
   font-size: 1.3em;
   font-weight: 300;
   margin-right: 100px;
+  font-weight: 300;
 }
 
 .nav-services-container {
@@ -36,6 +37,8 @@
   flex-direction: row;
   /* gap: 20px; */
   margin-left: 10px;
+  list-style: none;
+  color: #f5f3f5;
   /* margin-right: auto; */
 }
 
