@@ -8,6 +8,7 @@ import ReactDom from "react-dom/client";
 import React from "react";
 import About from "./Components/About/About";
 import Error from "./Components/Error/Error";
+import Contact from "./Components/Contact/Contact";
 
 export function App() {
   return (
@@ -40,7 +41,7 @@ const appRouter = createBrowserRouter([
       },
       {
         path: "/contact",
-        element: "",
+        element: <Contact />,
       },
       // {
       //   path: "/mart",
@@ -51,7 +52,12 @@ const appRouter = createBrowserRouter([
       //   ),
       // },
     ],
-    errorElement: <Error />,
+    errorElement: (
+      <>
+        <NavBar />
+        <Error />
+      </>
+    ),
   },
 ]);
 

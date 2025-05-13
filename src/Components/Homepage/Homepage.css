@@ -1,9 +1,9 @@
 .homepage-container {
   display: inline-flex;
   justify-content: space-between;
-  /* background-color: orange; */
-  /* background-color: #f5f3f5; */
-  margin-top: 2%;
+  background-color: #fedd16;
+  /* margin-top: 2%; */
+  padding-top: 0.5rem;
 }
 
 .tile-inside-container {
