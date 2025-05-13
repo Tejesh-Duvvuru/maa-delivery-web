@@ -1,72 +1,70 @@
-import "./App.css";
-import UserForm from "./Components/UserForm";
-import NavBar from "./Components/NavBar/NavBar";
-import Tile from "./Components/Tile/Tile";
-import Homepage from "./Components/Homepage/Homepage";
-import { createBrowserRouter, RouterProvider, Outlet } from "react-router";
-import ReactDom from "react-dom/client";
 import React from "react";
-import About from "./Components/About/About";
-import Error from "./Components/Error/Error";
-import Contact from "./Components/Contact/Contact";
+// import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import ReactDom from "react-dom/client";
+// import "./App.css";
+import Footer from "./Components/Footer";
+import Header from "./Components/Header";
+import ServicesSection from "./Components/ServicesSection";
+import TrackOrderSection from "./Components/TrackOrderSection";
+const App: React.FC = () => (
+  <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
+    <Header />
+    <main className="p-4 sm:p-8 flex flex-col lg:flex-row max-w-7xl mx-auto gap-6">
+      <ServicesSection />
+      <TrackOrderSection />
+    </main>
+    <Footer />
+  </div>
+);
 
-export function App() {
-  return (
-    <div className="App">
-      <NavBar />
-      <Outlet />
-      {/* <Tile /> */}
-    </div>
-  );
-}
+const root = document.getElementById("root");
 
-const appRouter = createBrowserRouter([
-  // {
-  //   path: "/",
-  //   element: <AppLayout></AppLayout>,
-  // },
+ReactDom.createRoot(root!).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+// const appRouter = createBrowserRouter([
+//   // {
+//   //   path: "/",
+//   //   element: <AppLayout></AppLayout>,
+//   // },
 
-  // we can use <AppLayout></AppLayout> or <AppLayout />  both will work
-  {
-    path: "/",
-    element: <App />,
-    children: [
-      {
-        path: "/",
-        element: <Homepage />,
-      },
-      {
-        path: "/about",
-        element: <About />,
-      },
-      {
-        path: "/contact",
-        element: <Contact />,
-      },
-      // {
-      //   path: "/mart",
-      //   element: (
-      //     <Suspense fallback={<h1>Loading..</h1>}>
-      //       <Instamart />
-      //     </Suspense>
-      //   ),
-      // },
-    ],
-    errorElement: (
-      <>
-        <NavBar />
-        <Error />
-      </>
-    ),
-  },
-]);
+//   // we can use <AppLayout></AppLayout> or <AppLayout />  both will work
+//   {
+//     path: "/",
+//     element: <App />,
+//     children: [
+//       {
+//         path: "/",
+//         element: <Homepage />,
+//       },
+//       {
+//         path: "/about",
+//         element: <About />,
+//       },
+//       {
+//         path: "/contact",
+//         element: <Contact />,
+//       },
+//       // {
+//       //   path: "/mart",
+//       //   element: (
+//       //     <Suspense fallback={<h1>Loading..</h1>}>
+//       //       <Instamart />
+//       //     </Suspense>
+//       //   ),
+//       // },
+//     ],
+//     errorElement: (
+//       <>
+//         <NavBar />
+//         <Error />
+//       </>
+//     ),
+//   },
+// ]);
 
-// const root = document.getElementById("root");
+// const root = ReactDom.createRoot(document.getElementById("root")!);
 
-// ReactDom.createRoot(root!).render(
-//   <React.StrictMode>{appRouter}</React.StrictMode>
-// );
-
-const root = ReactDom.createRoot(document.getElementById("root")!);
-
-root.render(<RouterProvider router={appRouter} />);
+// root.render(<RouterProvider router={appRouter} />);
