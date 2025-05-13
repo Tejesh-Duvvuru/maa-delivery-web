@@ -1,7 +1,6 @@
 import React from "react";
 // import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ReactDom from "react-dom/client";
-// import "./App.css";
 import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import ServicesSection from "./Components/ServicesSection";

@@ -5,9 +5,9 @@ const Header: React.FC = () => (
       <h1 className="text-2xl sm:text-3xl font-extrabold tracking-wide bg-clip-text text-transparent bg-gradient-to-r from-yellow-200 to-white animate-pulse">
         MAA DELIVERY
       </h1>
-      <NavLink href="#services" text="Services" />
     </div>
     <div className="flex flex-wrap justify-center gap-3 sm:gap-6">
+      <NavLink href="#services" text="Services" />
       <NavLink href="#franchise" text="Franchise" />
       <NavLink href="#partners" text="Partners" />
       <NavLink href="#contact" text="Contact us" />
